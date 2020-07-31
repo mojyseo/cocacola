@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocaCola</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="els">
+        <nav>
+
+            <div class="m-links" id="links">
+                <a href="/" id="m-active-page">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/blog">Blog</a>
+            </div>
+
+
+            <div class="navbar">
+                <a href="/" id="active-page">
+                    Home
+                </a>
+                <a href="/about">
+                    About
+                </a>
+                <a href="/contact">
+                    Contact
+                </a>
+                <a href="/blog">
+                    Blog
+                </a>
+            </div>
+
+            <div class="usernav">
+                <a href="">sign in</a>
+                /
+                <a href="">sign up</a>
+            </div>
+        </nav>
+
+        {% block content %}
+
+
+        <form action="#" class="contact-form">
+            <h1>Contact us</h1>
+            <div class="form-sec">
+                <label for="name"></label>Full name :</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-sec">
+                <label for="email">Email :</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-sec">
+                <label for="phone">Phone :</label>
+                <input type="number" name="phone">
+            </div>
+            <div class="form-sec">
+                <label for="desc">Your message :</label>
+                <textarea name="desc" id="" cols="30" rows="11"></textarea> </div>
+            <button type="submit">Send!</button>
+        </form>
+
+
+        {% endblock %}
+
+
+    </div>
+
+    <footer>
+        <a href="mailto:mohadeseh.ansari98@gmail.com" class="footer-email">mohadeseh.ansari98@gmail.com</a>
+        <div class="cocalogo">
+            <a href="/" id="">Coca</a>
+
+        </div>
+
+        <address class="footer-address">Iran - Tehran - Enghelab - P22</address>
+    </footer>
+
+
+</body>
+
+</html>

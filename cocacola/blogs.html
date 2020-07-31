@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocaCola</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="els">
+        <nav>
+
+            <div class="m-links" id="links">
+                <a href="/" id="m-active-page">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/blog">Blog</a>
+            </div>
+
+
+            <div class="navbar">
+                <a href="/" id="active-page">
+                    Home
+                </a>
+                <a href="/about">
+                    About
+                </a>
+                <a href="/contact">
+                    Contact
+                </a>
+                <a href="/blog">
+                    Blog
+                </a>
+            </div>
+
+            <div class="usernav">
+                <a href="/login">sign in</a>
+                /
+                <a href="/signup">sign up</a>
+            </div>
+        </nav>
+
+        {% block content %}
+
+        <div class="blog-posts">
+
+            <div class="blog-card">
+
+                <div class="bpt">
+                    <div class="social-blog">
+                        <i class="fa fas fa-twitter"></i>
+                        <i class="fa fas fa-whatsapp"></i>
+                        <i class="fa fas fa-telegram"></i>
+                        <i class="fa fas fa-instagram"></i>
+                        <i class="fa fas fa-share-alt"></i>
+
+                    </div>
+
+                    <div class="bpp">
+                        <div class="bppr">
+                            <h2>Title</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, consectetur eveniet.
+                                Magni pariatur beatae aperiam! Pariatur totam dolores dolor repudiandae aliquam deserunt
+                                libero, nibus amet, nulla provident officiis.
+                                Provident, molestias totam dicta commodi quo id cumque voluptates rerum et velit
+                                corporis at, quibusdam nisi accusantium. Aliquam enim modi saepe incidunt fugit
+                                architecto fuga nesciunt doloremque?</p>
+
+                        </div>
+                        <img src="https://picsum.photos/360/360?grayscale" alt="">
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="bpb">
+                    <a href="#" target="_blank" class="btn-moreb">Read more</a>
+                    <div class="bpbi">
+                        <small>Author : username</small>
+                        <small>2018/06/19</small>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        {% endblock %}
+
+
+    </div>
+
+    <footer>
+        <a href="mailto:mohadeseh.ansari98@gmail.com" class="footer-email">mohadeseh.ansari98@gmail.com</a>
+        <div class="cocalogo">
+            <a href="/" id="">Coca</a>
+
+        </div>
+
+        <address class="footer-address">Iran - Tehran - Enghelab - P22</address>
+    </footer>
+
+
+</body>
+
+</html>
